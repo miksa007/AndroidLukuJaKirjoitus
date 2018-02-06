@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">laskukone_v3</string>
+    <string name="button_summaa">Summaa</string>
+    <string name="button_nollaa">Nollaa</string>
+</resources>
