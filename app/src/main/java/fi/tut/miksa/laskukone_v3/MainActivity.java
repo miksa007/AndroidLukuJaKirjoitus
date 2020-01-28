@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         textView1=(TextView)findViewById(R.id.textView_summa);
         textViewLoki=findViewById(R.id.textViewloki);
 
-
+        //Luetaan data sovelluksen kaynnistyessa
         data.lueTiedostosta(this);
         textViewLoki.setText(data.getData());
         final Button button = findViewById(R.id.button_summa);
@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        //Kirjoitetaan data jos sovellus menee onPause -vaiheeseen(eli usein)
         data.kirjoitaTiedostoon(this);
     }
 
